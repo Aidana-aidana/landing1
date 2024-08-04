@@ -80,30 +80,26 @@ header {
 
 /* Фон с фиксированным прикреплением для каждой секции */
 .header-section {
-    background-color: #f8f9fa;
-    /* Замените на ваш цвет */
+    background-color: #f8f9fa; /* Замените на ваш цвет */
     background-attachment: fixed;
 }
 
 .next-page {
-    background-color: #e0f7fa;
-    /* Замените на ваш цвет */
+    background-color: #e0f7fa; /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .third-page {
-    background-color: #ffe4e1;
-    /* Замените на ваш цвет */
+    background-color: #ffe4e1; /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .fourth-page {
-    background-color: #333;
-    /* Замените на ваш цвет */
+    background-color: #333; /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
@@ -111,16 +107,14 @@ header {
 }
 
 .fifth-page {
-    background-color: #fff;
-    /* Замените на ваш цвет */
+    background-color: #fff; /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .sixth-page {
-    background-color: #f0e68c;
-    /* Замените на ваш цвет */
+    background-color: #f0e68c; /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
@@ -177,7 +171,6 @@ header {
 
 /* Медиа-запросы для мобильных устройств */
 @media only screen and (max-width: 768px) {
-
     .header-content,
     .next-content,
     .third-content,
@@ -198,11 +191,6 @@ header {
         text-align: center;
     }
 
-    .image-content img {
-        width: 100%;
-        height: auto;
-    }
-
     .stats {
         width: 100%;
         align-items: center;
@@ -215,6 +203,15 @@ header {
     .popup-content {
         width: 90%;
     }
+}
+
+/* Ограничение размера изображений */
+.image-content img {
+    max-width: 122px;
+    max-height: 122px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Стили для всплывающих окон */

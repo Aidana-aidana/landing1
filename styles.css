@@ -80,26 +80,30 @@ header {
 
 /* Фон с фиксированным прикреплением для каждой секции */
 .header-section {
-    background-color: #f8f9fa; /* Замените на ваш цвет */
+    background-color: #f8f9fa;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
 }
 
 .next-page {
-    background-color: #e0f7fa; /* Замените на ваш цвет */
+    background-color: #e0f7fa;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .third-page {
-    background-color: #ffe4e1; /* Замените на ваш цвет */
+    background-color: #ffe4e1;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .fourth-page {
-    background-color: #333; /* Замените на ваш цвет */
+    background-color: #333;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
@@ -107,14 +111,16 @@ header {
 }
 
 .fifth-page {
-    background-color: #fff; /* Замените на ваш цвет */
+    background-color: #fff;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .sixth-page {
-    background-color: #f0e68c; /* Замените на ваш цвет */
+    background-color: #f0e68c;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
@@ -171,6 +177,7 @@ header {
 
 /* Медиа-запросы для мобильных устройств */
 @media only screen and (max-width: 768px) {
+
     .header-content,
     .next-content,
     .third-content,
@@ -279,11 +286,320 @@ header {
     color: #fff;
 }
 
-.header-content img,
-.next-content img,
-.third-content img,
-.fourth-content img,
-.fifth-content img,
-.sixth-content img {
+.cta-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e5ffcc;
+    border: 2px solid #333;
+    color: #333;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d4ff99;
+    color: #000;
+}
+
+.section-relative {
+    position: relative;
+}
+
+.stat h3 {
+    font-size: 1em;
+    /* Уменьшите размер шрифта для заголовков */
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.stat p {
+    font-size: 1em;
+    /* Уменьшите размер шрифта для текста */
+    color: #666;
+}
+
+.stat {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 2px solid #e0f7fa;
     margin-top: 5px;
+    /* Отступ сверху */
+}
+
+.stat h3 {
+    font-size: 1.2em;
+    /* Уменьшите размер шрифта */
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.stat p {
+    font-size: 0.9em;
+    /* Уменьшите размер шрифта */
+    color: #666;
+}
+
+@media only screen and (max-width: 768px) {
+    .stat {
+        text-align: center;
+        /* Центрируйте текст на мобильных устройствах */
+    }
+
+    .stat h3,
+    .stat p {
+        font-size: 1em;
+        /* Уменьшите размер шрифта на мобильных устройствах */
+    }
+}
+
+.fifth-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    /* Центрирование текста */
+    margin-top: 0;
+    /* Убедитесь, что сверху нет отступов */
+}
+
+.fifth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Отступ сверху для других элементов */
+}
+
+.fifth-content .stat {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 2px solid #ccc;
+    margin-top: 5px;
+    /* Отступ сверху */
+}
+
+.fifth-content .stat h3,
+.fifth-content .stat p {
+    font-size: 1em;
+    /* Уменьшите размер шрифта */
+    text-align: center;
+    /* Центрирование текста на мобильных устройствах */
+}
+
+/* Стили для блока с ценами */
+.pricing-page {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.price-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.price-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price-box .price {
+    font-size: 2em;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.price-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-box ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media only screen and (max-width: 768px) {
+    .pricing-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-box {
+        width: 90%;
+    }
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #333;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    color: #333;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1.5em;
+    /* Увеличен размер шрифта */
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    color: #25D366;
+    font-size: 1.5em;
+    /* Увеличен размер шрифта */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cta-button-details {
+    background-color: #f4d27a;
+    /* Цвет фона */
+    color: #000;
+    /* Цвет текста */
+    padding: 10px 20px;
+    border: 2px solid #000;
+    /* Цвет и толщина рамки */
+    border-radius: 25px;
+    /* Скругленные углы */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button-details:hover {
+    background-color: #e5c06b;
+    /* Цвет фона при наведении */
+    color: #000;
+    /* Цвет текста при наведении */
+}
+
+
+
+
+.next-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-text {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.image-content {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.diet-plan-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 2px solid #e0f7fa;
+}
+
+.stat h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.stat p {
+    font-size: 1em;
+    color: #666;
+}
+
+.stat h3 {
+    font-size: 1em;
+    /* Уменьшенный размер шрифта для заголовков */
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.stat p {
+    font-size: 1em;
+    /* Размер шрифта для текста */
+    color: #666;
 }

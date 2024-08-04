@@ -278,3 +278,12 @@ header {
 .popup-link.white {
     color: #fff;
 }
+
+.header-content img,
+.next-content img,
+.third-content img,
+.fourth-content img,
+.fifth-content img,
+.sixth-content img {
+    margin-top: 5px;
+}

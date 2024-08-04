@@ -80,26 +80,30 @@ header {
 
 /* Фон с фиксированным прикреплением для каждой секции */
 .header-section {
-    background-color: #f8f9fa; /* Замените на ваш цвет */
+    background-color: #f8f9fa;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
 }
 
 .next-page {
-    background-color: #e0f7fa; /* Замените на ваш цвет */
+    background-color: #e0f7fa;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .third-page {
-    background-color: #ffe4e1; /* Замените на ваш цвет */
+    background-color: #ffe4e1;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .fourth-page {
-    background-color: #333; /* Замените на ваш цвет */
+    background-color: #333;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
@@ -107,14 +111,16 @@ header {
 }
 
 .fifth-page {
-    background-color: #fff; /* Замените на ваш цвет */
+    background-color: #fff;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
 }
 
 .sixth-page {
-    background-color: #f0e68c; /* Замените на ваш цвет */
+    background-color: #f0e68c;
+    /* Замените на ваш цвет */
     background-attachment: fixed;
     padding: 50px 20px;
     text-align: center;
@@ -171,6 +177,7 @@ header {
 
 /* Медиа-запросы для мобильных устройств */
 @media only screen and (max-width: 768px) {
+
     .header-content,
     .next-content,
     .third-content,
@@ -210,35 +217,6 @@ header {
     }
 }
 
-/* Стили для всплывающих окон */
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    height: 80%;
-    overflow-y: auto;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-
-.popup-content h2 {
-    margin-top: 0;
-}
 
 .close-btn {
     background-color: #333;
